@@ -19,6 +19,7 @@ class Scraper
     collection={}
     doc= Nokogiri::HTML(open(profile_url))
     links = doc.css("div.social-icon-container a").collect{|l| l["href"]}
+    links.each do |link|
     
   end
 
