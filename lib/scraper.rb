@@ -1,5 +1,6 @@
 require 'open-uri'
 require 'pry'
+require ''
 
 class Scraper
 
