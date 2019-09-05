@@ -20,7 +20,7 @@ class Student
      attributes_hash.each {|attr, value| self.send("#{attr}=", value)}
     self
   end
-  end
+  
 
   def self.all
     @@all
