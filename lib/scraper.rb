@@ -22,12 +22,13 @@ def self.scrape_profile_page(profile_url)
     links.each do |link|     
       if link.include?("twitter")
         collection[:twitter] = link
+      elsif link.include?(".com")
+        collection[:blog] = link 
       elsif link.include?("github")
         collection[:github] = link 
       elsif link.include?("linkedin")
         collection[:linkedin] = link 
-      elsif link.include?(".com")
-        collection[:blog] = link 
+
         end
       end
     
