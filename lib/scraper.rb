@@ -32,7 +32,7 @@ class Scraper
         end
       end
     
-    
+    collection[:profile_quote] = doc.css(".profile-quote").text.strip
   end
 
 end
